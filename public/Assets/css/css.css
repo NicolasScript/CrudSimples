@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap');
+
+body {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto Serif", monospace, sans-serif;
+    background-color: rgb(145, 70, 216);
+}
+
+input {
+    border: 2px black solid;
+    border-radius: 8px;
+    font-size: 1.4em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.texto-input {
+    width: 10em;
+    padding: .2em;
+}
+
+.btn {
+    width: 4em;
+}
+
+.textoss {
+    text-align: center;
+}
+
+.nomes {
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-family: "Roboto Serif", monospace, sans-serif;
+    font-size: 1.5em;
+    border: 2px solid black;
+    padding: .2em;
+    text-shadow: 0px 1px 2px black;
+    box-shadow: 0px 0px 5px black;
+}
+
+.btns {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.delete {
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    border: 1px black solid;
+    text-shadow: 0px 1px 2px black;
+    border-radius: 10px;
+    width: 5em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    height: 1.3em;
+    line-height: 1.3em;
+}
+
+.editar {
+    height: 1.3em;
+    line-height: 1.3em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: teal;
+    color: black;
+    border: 1px black solid;
+    text-shadow: 0px 1px 2px black;
+    border-radius: 10px;
+    width: 5em;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}

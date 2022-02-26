@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/css/css.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Inicio</h1>
+        <form action="/" method="post">
+            <input type="text" name="texto" class="texto-input">
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+        <div class="textoss">
+            <% items.forEach(key => { %>
+                <p class="nomes"><%= key.text %></p>
+                
+                <div class="btns">
+                    <a href="/edit/<%= key.id %>" class="editar">Editar</a>
+                    <form action="/<%= key.id %>?_method=delete" method="POST">
+                        <button type="submit" class="delete">Delete</button>
+                    </form>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
